@@ -50,8 +50,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-    background-color: #F7B1D4; 
-    color: #000000;     /* bildetekst og hamburgermeny */
+    background-color: #ffffff; 
+    color: #0C4C71;     /* bildetekst og hamburgermeny */
     width: 100%;
     }
 
@@ -90,9 +90,9 @@ align-items: center;
 
 .navbar a {
   text-decoration: none;
-  color: #33262c;
+  color: #0C4C71;
   font-family: 'Quicksand', sans-serif;
-  font-size: 16px;
+  font-size: 24px;
   padding: 10px;
   border-radius: 4px;
   position: relative;
@@ -100,22 +100,24 @@ align-items: center;
   }
 
 .navbar a:hover {
-  background-color: rgba(253, 226, 239, 0.5); /* Transparent rosa bakgrunn */
-  color: #FF9B58; /* Endrer tekstfargen på hover */
+  background-color: rgba(12, 76, 113, 0.5); /* Transparent petrol bakgrunn */
+  color: #ffffff; /* Endrer tekstfargen på hover */
   }
 
 .navbar a.active {
-    background-color: rgba(138, 175, 138, 0.5); /* Transparent lyseblå bakgrunn */
-    color: #000000; 
+   
+    color: #0C4C71; 
+    font-weight: bold;
+    
   }
 
 .navbar ul li:not(:last-child) a::after { /*strekene mellom menynavn */
   content: "";
-  position: absolute;
-  top: 50%;
-  right: -10px; /* plasserer streken til høyre for lenken */
+  position: relative;
+  top: 20%;
+  right: -20px; /* plasserer streken til høyre for lenken */
   height: 70%; /*juster høyden etter behov*/
-  border-right: 1px solid #FC63AE;
+  border-right: 1px solid #6C9BB6;
   transform: translateY(-50%); /* Sentrer vertikalt */
   }
 
@@ -137,14 +139,14 @@ align-items: center;
 
 
 .email {
-  color: #000000;
+  color: #870808;
 }
 
 main {
 
     flex: 1; /*main tar opp all tilgjengelig plass, flytter footeren som kommer etter helt ned på siden når innholdet er mindre enn skjermen */
     padding: 20px; /*luft mellom innholdet og kanten på innholdet */
-    background-color: #FDE2EF;
+    background-color: #6C9BB6;
     text-align: center;
 }
 
@@ -154,7 +156,7 @@ font-size: x-small;
 margin: 0;
 width: 100%;
 box-sizing: border-box;
-background-color: #FC63AE;
+background-color: #ffffff;
 text-align: center;
 
 }
@@ -173,7 +175,7 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 10px;
     padding: 20px;
-    background-color: #FDE2EF;
+    background-color: #0C4C71;
 }
 
 .gallery-item {
@@ -259,9 +261,9 @@ footer p {
   position: absolute;
   top: 100%;
   right: 0;
-  background-color: #FC63AE;
-  width: 150px;
-  padding: 20px;
+  background-color: #061c29;
+  width: 100%;
+  padding: 35px;
   border-bottom-left-radius: 20px; /* mykt hjørne nede venstre på menyen*/
   z-index: 1;
 }
@@ -271,12 +273,12 @@ footer p {
   
 }
 .mobile-menu li {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
 .mobile-menu a {
   
-  color: #000000;
+  color: #ffffff;
   text-decoration: none;
   font-size: 16px;
 }
@@ -380,7 +382,7 @@ footer p {
           padding-bottom: 15px;
         }
         footer p {
-          font-size: 0.5rem;
+          font-size: 10px;
           padding: 5px;
         }
       }
